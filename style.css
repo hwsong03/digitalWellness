@@ -110,6 +110,29 @@ footer {
     }
 }
 
+/* Introductory Section Styles */
+.intro-section {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #E1ECEE; /* Light background for contrast */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.intro-section p {
+    color: #522888;
+    font-size: 1.1em;
+}
+
+.section-title {
+    text-align: center;
+    color: #522888;
+    margin: 30px 0;
+    font-size: 24px;
+}
+
 /* article grid layout */
 .articles-grid {
     display: grid;
