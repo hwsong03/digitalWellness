@@ -1,0 +1,244 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Archia', sans-serif;
+    color: #967BB6;
+    background-color: #CDC7D9;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #CDC7D9;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+#header-symbol {
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    height: auto;
+}
+
+nav {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    color: #66369D;
+    transform: scale(1.1);
+}
+
+#interactive-background {
+    transition: all 0.5s ease;
+    text-align: center;
+    padding: 40px;
+    margin: auto;
+    width: 80%;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #CDC7D9;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+h1 {
+    color: #522888;
+    margin-bottom: 30px;
+}
+
+p {
+    margin: 0;
+}
+
+footer, main {
+    background-color: #CDC7D9;
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto;
+}
+
+@media (max-width: 600px) {
+    nav {
+        position: static;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* article grid layout */
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.article-square {
+    background-color: #E1ECEE;
+    color: #522888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.article-square:hover {
+    background-color: #A897BC;
+    color: white;
+}
+
+@media (max-width: 800px) {
+    .articles-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .articles-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.challenges-line {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    overflow-x: auto; 
+}
+
+.challenge-image {
+    margin-right: -200px; 
+    transition: all 0.3s ease;
+    position: relative;
+    cursor: pointer;
+}
+
+.challenge-image img {
+    max-width: 49px; 
+    height: auto;
+    border-radius: 10px;
+}
+
+.challenge-image:hover {
+    z-index: 10; 
+    transform: translateY(-15px); 
+}
+
+@media (max-width: 800px) {
+    .challenge-image {
+        margin-right: -25px; 
+    }
+}
+
+@media (max-width: 500px) {
+    .challenge-image {
+        margin-right: -15px; 
+    }
+}
+
+/* Quiz Container Styles */
+.quiz-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.quiz-container h1 {
+    color: #522888; 
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Question Styles */
+.question {
+    margin-bottom: 20px;
+}
+
+.question h2 {
+    color: #66369D; /* Subtitle color */
+    margin-bottom: 10px;
+}
+
+.question ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.question li {
+    background-color: #E1ECEE; 
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Scoring System Styles */
+.scoring {
+    margin-top: 30px;
+    background-color: #DECBE0; 
+    padding: 15px;
+    border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+    .quiz-container {
+        margin: 10px;
+        padding: 15px;
+    }
+}
